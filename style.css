@@ -16,26 +16,63 @@ body {
   color: #a54328;
 }
 .conteiner {
-  margin: 5.3rem 3.7rem;
-  border: 0.1rem solid blue;
+  margin: 5.3rem 3.7rem 3rem;
+  border: 1px solid blue;
 }
 .conteiner ol,
 .conteiner ul {
   list-style: disc;
   padding-left: 2rem;
 }
+.box-main{
+  max-width: 30.8229rem;
+}
 .box-itens {
   display: flex;
+  max-width: 31.9rem;
   flex-direction: column;
   padding: 3.4rem 0rem 3.7rem 0rem;
-  font-size: 14.171px;
+  font-size: 1.4171rem;
   font-weight: 400;
-  border: 0.1rem solid blue;
+  border: 1px solid blue;
+}
+.box-itens h2 {
+  margin-bottom: 3.5rem;
 }
 .box-main h1,
 .box-itens h2 {
   font-size: 2.8343rem;
 }
+.conteiner button {
+  display: flex;
+  width: 9.424rem;
+  height: 3.1886rem;
+  padding: 1.1337rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #a54328;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  margin-top: 1.7rem;
+  border: none;
+}
 .box-main p {
   font-size: 1.4171rem;
+}
+@media(min-width: 710px){
+  .conteiner{
+    display: flex;
+    gap: 5rem;
+    border: 1px solid blue;
+  }
+}
+@media(min-width: 850px){
+  .conteiner{
+    gap: 18.9rem;
+    border: 1px solid blue;
+  }
 }
