@@ -17,14 +17,15 @@ body {
 }
 .conteiner {
   margin: 5.3rem 3.7rem 3rem;
-  border: 1px solid blue;
 }
-.conteiner ol,
 .conteiner ul {
   list-style: disc;
   padding-left: 2rem;
 }
-.box-main{
+.conteiner ol {
+  list-style: none;
+}
+.box-main {
   max-width: 30.8229rem;
 }
 .box-itens {
@@ -34,10 +35,13 @@ body {
   padding: 3.4rem 0rem 3.7rem 0rem;
   font-size: 1.4171rem;
   font-weight: 400;
-  border: 1px solid blue;
+
 }
 .box-itens h2 {
   margin-bottom: 3.5rem;
+}
+.box-itens p:nth-of-type(2) {
+  margin-top: 2rem;
 }
 .box-main h1,
 .box-itens h2 {
@@ -63,16 +67,57 @@ body {
 .box-main p {
   font-size: 1.4171rem;
 }
-@media(min-width: 710px){
-  .conteiner{
+@media (min-width: 710px) {
+  .conteiner {
     display: flex;
     gap: 5rem;
-    border: 1px solid blue;
+  }
+  .box-itens{
+    padding: 0rem 0rem 3.7rem 0rem;
   }
 }
-@media(min-width: 850px){
+@media (min-width: 850px) {
+  .conteiner {
+    gap: 10rem;
+  }
+}
+@media (min-width: 950px) {
+  .box-main h1,
+  .box-itens h2 {
+    font-size: 4rem;
+  }
+  .box-main p {
+    font-size: 2rem;
+  }
+  .conteiner {
+    justify-content: center;
+    margin: 2.3rem 3.7rem 3rem;
+  }
+  .box-main {
+    text-align: center;
+    max-width: 43.5rem;
+  }
+  .box-itens {
+    max-width: 52.5rem;
+    font-size: 2rem;
+    padding: 0rem 0rem 3.7rem 0rem;
+  }
+  .conteiner button {
+    margin-top: 4.4rem;
+    width: 13.3rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    border-radius: 0.8rem;
+  }
+  img {
+    width: 41.1rem;
+    height: 24.3704rem;
+  }
+}
+@media(min-width: 1000px){
   .conteiner{
     gap: 18.9rem;
-    border: 1px solid blue;
   }
 }
