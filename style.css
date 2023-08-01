@@ -7,6 +7,7 @@
   font-size: 62.5%;
 }
 img {
+  width: 100%;
   margin: 4.7rem 0rem;
 }
 body {
@@ -29,6 +30,9 @@ body {
 }
 .box-main {
   max-width: 30.8229rem;
+}
+.box-main p {
+  font-size: 1.4171rem;
 }
 .box-itens {
   display: flex;
@@ -64,9 +68,7 @@ body {
   line-height: 1.7rem;
   margin-top: 1.7rem;
   border: none;
-}
-.box-main p {
-  font-size: 1.4171rem;
+  cursor: pointer;
 }
 @media (min-width: 710px) {
   .conteiner {
@@ -87,21 +89,9 @@ body {
   }
 }
 @media (min-width: 950px) {
-  .box-main p {
-    font-size: 2rem;
-  }
   .conteiner {
     justify-content: center;
-    margin: 2.3rem 3.7rem 3rem;
-  }
-  .box-main {
-    text-align: center;
-    max-width: 43.5rem;
-  }
-  .box-itens {
-    max-width: 52.5rem;
-    font-size: 2rem;
-    padding: 0rem 0rem 3.7rem 0rem;
+    margin: 2.3rem 0rem 0.8rem;
   }
   .conteiner button {
     margin-top: 4.4rem;
@@ -112,9 +102,22 @@ body {
     line-height: 2.4rem;
     border-radius: 0.8rem;
   }
+  .box-main {
+    text-align: center;
+    max-width: 43.5rem;
+  }
+  .box-main p {
+    font-size: 2rem;
+  }
+  .box-itens {
+    max-width: 52.5rem;
+    font-size: 2rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
   img {
     width: 41.1rem;
     height: 24.3704rem;
+    margin-bottom: 3.0rem;
   }
 }
 @media (min-width: 1000px) {
